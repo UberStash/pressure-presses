@@ -3120,6 +3120,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"anymatch@npm:~3.1.2":
+  version: 3.1.2
+  resolution: "anymatch@npm:3.1.2"
+  dependencies:
+    normalize-path: ^3.0.0
+    picomatch: ^2.0.4
+  checksum: cd6c08eb8d435741a9de6f5695c75cfba747a50772929ca588235535c6a57d37f2c2b34057768f015fd92abb88108b122ed2e399faac6ae30363a8ca0b6107d0
+  languageName: node
+  linkType: hard
+
 "aproba@npm:^1.0.3, aproba@npm:^1.1.1":
   version: 1.2.0
   resolution: "aproba@npm:1.2.0"
@@ -4235,6 +4245,25 @@ __metadata:
   version: 11.1.2
   resolution: "check-types@npm:11.1.2"
   checksum: e756b5a813d192216caad74f546a62a9b777fdc7b3b73cb0b73135fd4cdd43e8abcfe9793ac4df6ac3470aee9e79810278a1bef40d3fc31dc9cf9cfa6671eb18
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:>=3.0.0 <4.0.0":
+  version: 3.5.2
+  resolution: "chokidar@npm:3.5.2"
+  dependencies:
+    anymatch: ~3.1.2
+    braces: ~3.0.2
+    fsevents: ~2.3.2
+    glob-parent: ~5.1.2
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.6.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 52fbff3acebf06ec0125872110f6c8403e66cd3d613264c83405496e199554d99380342d9b3a7ffd7910c53c5865e242ed7dd72fcb2e883d8e3ad3f3883aee6c
   languageName: node
   linkType: hard
 
@@ -6862,7 +6891,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@^2.1.2, fsevents@^2.1.3, fsevents@~2.3.1":
+"fsevents@^2.1.2, fsevents@^2.1.3, fsevents@~2.3.1, fsevents@~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -6881,7 +6910,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.1.3#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.1.3#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"
   dependencies:
@@ -7009,6 +7038,15 @@ fsevents@^1.2.7:
   dependencies:
     is-glob: ^4.0.1
   checksum: 2af6e196fba4071fb07ba261366e446ba2b320e6db0a2069cf8e12117c5811abc6721f08546148048882d01120df47e56aa5a965517a6e5ba19bfeb792655119
+  languageName: node
+  linkType: hard
+
+"glob-parent@npm:~5.1.2":
+  version: 5.1.2
+  resolution: "glob-parent@npm:5.1.2"
+  dependencies:
+    is-glob: ^4.0.1
+  checksum: 82fcaa4ce102a0ae01370ed8fd5299ca32184af0418e1c1b613ed851240160558c0cc9712868eb9ca1924f687b07cd9c70c25f303f39f9f376d9a32f94f28e76
   languageName: node
   linkType: hard
 
@@ -9919,6 +9957,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"node-bin-setup@npm:^1.0.0":
+  version: 1.0.6
+  resolution: "node-bin-setup@npm:1.0.6"
+  checksum: df58fd4b9d216ea5f6d257e51ccdfb071e3bfd3c7a48fb28be9c62873e2f56d6acfb1d8be0273157b412dad5e3f7e594b28b033774599dac941532a0b75c0504
+  languageName: node
+  linkType: hard
+
 "node-forge@npm:^0.10.0":
   version: 0.10.0
   resolution: "node-forge@npm:0.10.0"
@@ -10009,6 +10054,17 @@ fsevents@^1.2.7:
   version: 1.1.70
   resolution: "node-releases@npm:1.1.70"
   checksum: 18e2b4b871614247633a7f246ec04f6eebcb0353c0514c38b5d814be6d067301c4b1b0e7cb53407b36034e79fbc589f77a1acafdaf292abc46a4f65b4b7af2e6
+  languageName: node
+  linkType: hard
+
+"node@npm:^16.3.0":
+  version: 16.3.0
+  resolution: "node@npm:16.3.0"
+  dependencies:
+    node-bin-setup: ^1.0.0
+  bin:
+    node: bin/node
+  checksum: de436d7be0c167bc371b8a44a33af3ef4d174420fb66c0e1397b67a24289cc62df2d6d868a65d52de30ec2e81ae42fd44d095b672f34bc304a70a3681c20bd95
   languageName: node
   linkType: hard
 
@@ -11667,9 +11723,11 @@ fsevents@^1.2.7:
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
     eslint-config-react-app: ^6.0.0
+    node: ^16.3.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
+    sass: ^1.35.1
     web-vitals: ^1.0.1
   languageName: unknown
   linkType: soft
@@ -12236,6 +12294,15 @@ fsevents@^1.2.7:
   dependencies:
     picomatch: ^2.2.1
   checksum: a64fe5606937d9655252230003362d95da05dbfd3baecedb4bb8c1bc0df497d051a192f9b75345c944e58a0b362c68349be602d6dbf05d03770e510b35a9f80f
+  languageName: node
+  linkType: hard
+
+"readdirp@npm:~3.6.0":
+  version: 3.6.0
+  resolution: "readdirp@npm:3.6.0"
+  dependencies:
+    picomatch: ^2.2.1
+  checksum: 7da2fe8d5abf17ae0bf97a052718e16d29fa185f3e461153035728d93642326ae8e44c17b9a9b3a5fa616dff160e96be3184e0323efaac7211f80c0aab5f622b
   languageName: node
   linkType: hard
 
@@ -12825,6 +12892,17 @@ resolve@1.18.1:
     sass:
       optional: true
   checksum: 725245f0259453fcc51c4a1012c484dda1340ebb10b9c461e2b3b4408105f5426ad5613282ad0861c1f32744533d8a584450b11daf42aa1237b04287f01223d4
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.35.1":
+  version: 1.35.1
+  resolution: "sass@npm:1.35.1"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+  bin:
+    sass: sass.js
+  checksum: ceeb2ebd09f8c058e71ce9b35b7dc0af8800ff2a87d52d9efe8d0f10e6649200065b7526f07326b52d6946c0d57997e13d96985fa826926edf8b1e31a839c000
   languageName: node
   linkType: hard
 
